@@ -7,7 +7,8 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^5",
-    "express": "^4"
+    "express": "^4",
+    "passport": "^0.5.2"
   },
   "devDependencies": {
     "@sap/ux-specification": "^1.100.0",
@@ -16,7 +17,8 @@
   "scripts": {
     "start": "cds run",
     "watch-risks": "cds watch --open risks/webapp/index.html?sap-ui-xx-viewCache=false#fe-lrop-v4",
-    "watch-risk123": "cds watch --open risk123/webapp/index.html?sap-ui-xx-viewCache=false#fe-lrop-v4"
+    "watch-risk123": "cds watch --open risk123/webapp/index.html?sap-ui-xx-viewCache=false#fe-lrop-v4",
+    "watch-mitigations": "cds watch --open mitigations/webapp/index.html?sap-ui-xx-viewCache=false#fe-lrop-v4"
   },
   "eslintConfig": {
     "extends": "eslint:recommended",
@@ -46,6 +48,7 @@
   "sapux": [
     "app/risks",
     "app/risk123",
-    "app/risks"
+    "app/risks",
+    "app/mitigations"
   ]
 }

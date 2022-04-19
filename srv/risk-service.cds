@@ -1,5 +1,5 @@
 using { sap.ui.riskmanagement as my } from '../db/schema';
-
+//understand this
 @path: 'service/risk'
 service RiskService {
   entity Risks as projection on my.Risks;

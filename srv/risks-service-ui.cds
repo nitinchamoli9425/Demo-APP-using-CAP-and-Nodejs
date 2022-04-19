@@ -3,7 +3,7 @@ using RiskService from './risk-service';
 annotate RiskService.Risks with {
 	title       @title: 'Title';
 	prio        @title: 'Priority';
-	descr       @title: 'Description';
+	descr       @title: 'Description123445';
 	miti        @title: 'Mitigation';
 	impact      @title: 'Impact';
 }
@@ -32,10 +32,10 @@ annotate RiskService.Risks with @(
             },
 			Description : {
 				$Type: 'UI.DataField',
-				Value: descr
+				Value: descr //what is happening here ? from where are the values coming?
 			}
 		},
-		SelectionFields: [prio],
+		SelectionFields: [impact],
 		LineItem: [
 			{Value: title},
 			{Value: miti_ID},
